@@ -1,0 +1,10 @@
+:root {
+  --color-base: blue;
+  --color-important: rgb(0, 2, 95);
+  --color-warning: rgb(0, 255, 255);
+  --color-font: white;
+  --font-principal: Comic Sans MS, cursive;
+  --font-secondary: "Jost", sans-serif;
+  --box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.5);
+  --border-radius: 10px;
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("tema2.css");
+
+body {
+  margin: 20px;
+  padding: 0;
+}
+
+div {
+  max-width: 100px;
+  padding: 30px;
+  border: 0.1rem solid grey;
+  font-family: "Nunito", sans-serif;
+  border-radius: var(--border-radius);
+}
+
+.base {
+  background-color: var(--color-base);
+}
+.important {
+  background-color: var(--color-important);
+}
+.warning {
+  background-color: var(--color-warning);
+}
+.font {
+  background-color: var(--color-font);
+  border: none;
+}
+
+.font span:nth-child(1) {
+  font-family: var(--font-principal);
+}
+
+.font span:nth-child(2) {
+  font-family: var(--font-secondary);
+}
+
+.box-shadows {
+  background-color: var(--color-font);
+  box-shadow: var(--box-shadow);
+}

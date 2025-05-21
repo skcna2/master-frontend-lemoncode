@@ -1,0 +1,10 @@
+:root {
+  --color-base: red;
+  --color-important: rgb(110, 0, 0);
+  --color-warning: pink;
+  --color-font: white;
+  --font-principal: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --font-secondary: "Georgia", sans-serif;
+  --box-shadow: -10px 10px 6px 0px rgba(0, 0, 0, 0.5);
+  --border-radius: none;
+}

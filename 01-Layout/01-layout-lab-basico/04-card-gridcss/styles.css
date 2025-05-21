@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+[class^="card-"] {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+img {
+  width: 100%;
+  height: 250px;
+  max-height: 100%;
+}
+.fecha {
+  width: 100%;
+  text-align: right;
+}
+p {
+  width: 90%;
+}
+p a {
+  text-decoration: none;
+  color: green;
+}
+button {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+  background-color: rgb(129, 212, 3);
+  color: white;
+}
+h2 {
+  text-align: left;
+  width: 90%;
+}
+.boton {
+  width: 90%;
+}

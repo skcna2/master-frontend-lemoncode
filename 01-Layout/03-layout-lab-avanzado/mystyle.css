@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1280px;
+  background-color: #141414;
+  font-family: "Jost", sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.top img {
+  min-width: 225px;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+.first img,
+.second img {
+  min-width: 250px;
+}

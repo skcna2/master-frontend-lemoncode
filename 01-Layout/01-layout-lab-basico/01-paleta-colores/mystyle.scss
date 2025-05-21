@@ -1,0 +1,84 @@
+@use "sass:color" as *;
+
+$color-base: red;
+$color-base1: blue;
+$color-base2: green;
+$color-font: white;
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+[class^="container-"] {
+  display: flex;
+  justify-content: space-around;
+  max-width: 55%;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  div {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+    border-radius: 10%;
+  }
+}
+
+.box.base-color {
+  background-color: $color-base;
+  color: $color-font;
+  width: 100px;
+}
+.box.base-color1 {
+  background-color: $color-base1;
+  color: $color-font;
+  width: 100px;
+}
+.box.base-color2 {
+  background-color: $color-base2;
+  color: $color-font;
+  width: 100px;
+}
+
+$i: 1;
+@while $i <= 4 {
+  .container-1 .box.lighten-#{$i} {
+    background-color: scale($color-base, $lightness: $i * 15%);
+    color: scale($color-font, $lightness: $i * 15%);
+  }
+  .container-2 .box.lighten-#{$i} {
+    background-color: scale($color-base1, $lightness: $i * 15%);
+    color: scale($color-font, $lightness: $i * 15%);
+  }
+  .container-3 .box.lighten-#{$i} {
+    background-color: scale($color-base2, $lightness: $i * 15%);
+    color: scale($color-font, $lightness: $i * 15%);
+  }
+
+  $i: $i + 1;
+}
+
+$i: 4;
+@while $i >= 1 {
+  .container-1 .box.darken-#{$i} {
+    background-color: scale($color-base, $lightness: -1 * $i * 15%);
+    color: scale($color-font, $lightness: -1 * $i * 15%);
+  }
+  .container-2 .box.darken-#{$i} {
+    background-color: scale($color-base1, $lightness: -1 * $i * 15%);
+    color: scale($color-font, $lightness: -1 * $i * 15%);
+  }
+  .container-3 .box.darken-#{$i} {
+    background-color: scale($color-base2, $lightness: -1 * $i * 15%);
+    color: scale($color-font, $lightness: -1 * $i * 15%);
+  }
+
+  $i: $i - 1;
+}
+
+//darken
+//scale($current-color, $lightness: -1 * $i * 15%);
+
+//lighten
+//scale($current-color, $lightness: $i * 15%);
