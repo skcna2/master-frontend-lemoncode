@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,39 +6,92 @@
 }
 
 body {
-  min-width: 1280px;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
   background-color: #141414;
   font-family: "Jost", sans-serif;
   color: white;
 }
 
 header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.platform-title,
+.top-item4,
+.top-item5 {
+  display: none;
+}
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .top {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-.top img {
-  min-width: 225px;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .first,
 .second {
-  display: flex;
-  flex-wrap: wrap;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
+  gap: 5px;
+  justify-content: center;
+}
 .first img,
 .second img {
   min-width: 250px;
+  height: auto;
+  object-fit: scale-down;
+  display: block;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+  .platform-title,
+  .top-item4,
+  .top-item5 {
+    display: block;
+  }
+  .top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+  }
+
+  .top img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .first,
+  .second {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    justify-content: center;
+  }
+
+  .first img,
+  .second img {
+    min-width: 250px;
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+  }
 }
