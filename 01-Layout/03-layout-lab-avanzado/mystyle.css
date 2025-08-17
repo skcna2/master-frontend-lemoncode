@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: solid 1px red;
 }
+
+/* Estilos base (mobile first) */
 
 body {
   font-family: "Jost", sans-serif;
@@ -12,6 +15,7 @@ body {
   background-color: #141414;
   font-family: "Jost", sans-serif;
   color: white;
+  margin: 15px;
 }
 
 header {
@@ -22,8 +26,24 @@ header {
 }
 .header-buttons {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
+
+.header-buttons div {
+  padding: 5 15px;
+  margin: 1px;
+}
+.header-buttons div:hover {
+  background-color: azure;
+  color: #141414;
+  border-radius: 10%;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
 .platform-title,
 .top-item4,
 .top-item5 {
@@ -58,11 +78,17 @@ main {
   border-radius: 8px;
 }
 
+/* Estilos para pantallas más grandes (desktop/tablet) */
+
 @media screen and (min-width: 1280px) {
   .platform-title,
   .top-item4,
   .top-item5 {
     display: block;
+  }
+
+  .platform-title {
+    padding-left: 10px;
   }
   .top {
     display: grid;
